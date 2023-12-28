@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Card</title>
+ <style>
+  body{
+      background-color: black;
+  }
+    .card{
+        width: 150px;
+        height: 200px;
+        background: url(./yatharth.jpg) center no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+        transform: rotate(30deg) skew(-10deg, -5deg);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transition-duration: .5s ;
+    }
+    .card:hover{
+       translate: 0px -60px;
+       /* transform: translate(0, -30px); */
+       box-shadow: rgba(13, 202, 174, 0.4) 5px 5px, rgba(10, 161, 199, 0.3) 10px 10px, rgba(9, 133, 171, 0.2) 15px 15px, rgba(8, 147, 189, 0.1) 20px 20px, rgba(11, 187, 210, 0.05) 25px 25px;
+    }
+ </style>
+</head>
+<body>
+   <div class="card">
+
+   </div>
+</body>
+</html>

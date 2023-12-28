@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<style>
+   *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box; font-family: Arial, Helvetica, sans-serif;
+   }
+   .main{
+       /* border: 2px solid red; */
+       width: 120vw;
+       height: 100vh;
+   }
+   .main img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+   }
+
+   .main_login_box{
+      width: 350px;
+      height: 350px;
+      /* border: 1px solid red; */
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+   }
+  .main_login_box span {
+      position: absolute;
+      inset: 0;
+      border: 1px solid #ffffff;
+      opacity: 0.5;
+      
+  }
+  .main_login_box span:nth-child(1){
+   border-radius: 50% 50% 64% 36% / 41% 45% 55% 59% ;
+   border: none;
+    /* animation: anim1 6s linear infinite; */
+    backdrop-filter: blur(200px);
+  }
+  .main_login_box span:nth-child(2){
+     border-radius: 71% 29% 62% 38% / 31% 62% 38% 69% ;
+     animation: anim1 6s linear infinite;
+     /* backdrop-filter: blur(200px); */
+  }
+  .main_login_box span:nth-child(3){
+     border-radius: 20% 80% 27% 73% / 71% 38% 62% 29%  ;
+     animation: anim3 6s linear infinite;
+     /* backdrop-filter: blur(200px); */
+  }
+  @keyframes anim1{
+     0%{
+        transform: rotate(0deg);
+     }
+     100%{
+        transform: rotate(360deg);
+     }
+  }
+  @keyframes anim3{
+     0%{
+        transform: rotate(369deg);
+     }
+     100%{
+        transform: rotate(0deg);
+     }
+  }
+  .input_box{
+     /* border: 2px solid red; */
+     max-width: 290px;
+     height: auto;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+  }
+  .input_box div{
+    /* border: 1px solid blue; */
+    
+    
+  }
+  .input_box div h3{
+      text-align: center;
+      margin: 0px 0  20px 0;
+      color: white;
+  } 
+
+  .input_box div  input[type="text"]{
+     color: white;
+     outline: none;
+     margin: 10px 0;
+     width: 100%;
+     padding: 10px;
+     border: none;
+     border-bottom: 2px solid white;
+     background: none;
+  }
+  .input_box div  input[type="text"]::placeholder{
+   color: white;
+  }
+
+  .input_box div  input[type="password"]{
+     margin: 10px 0;
+     width: 100%;
+     padding: 10px;
+     border: none;
+     border-bottom: 2px solid white;
+     color: white;
+     background: none;
+     outline: none;
+  }
+  .input_box div  input[type="password"]::placeholder{
+   color: white;
+  }
+  .input_box div input[type="checkbox"]{
+     margin-left: 0px;
+     margin-bottom: 20px;
+     margin-top: 20px;
+     margin-right: 3px;
+  }
+  .input_box div p{
+    color: white;
+    display: inline;
+  }
+  .input_box div button{
+     width: 50%;
+     margin-left: 45px;
+     padding: 4px 16px;
+     font-weight: bold;
+     border-radius: 20px;
+     border: none;
+     cursor: pointer;
+     background: rgb(204, 203, 203);
+  }
+</style>
+<body>
+   <div class="main">
+      <img src="./galjpg.jpg"/>
+    <div class="main_login_box">
+           <span></span>
+           <span></span>
+           <span></span>
+       
+           <div class="input_box">
+                <div>
+                   <h3>Login</h3>
+                   <input type="text" placeholder="Email"/>
+                   <input type="password" placeholder="Password"/><br> 
+                   <input type="checkbox"/><p> Forget Password</p><br>
+                   <button type="submit">Login</button>
+                </div>
+           </div>
+    </div>
+   </div>
+</body>
+</html>

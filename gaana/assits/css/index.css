@@ -1,0 +1,107 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+/* ===================navbar start======================================== */
+nav{
+   background-color: #f5f5f5;
+   width: 100vw;
+   height: 60px;
+   display: flex;
+   justify-content: space-between;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   position: fixed;
+}
+                  /*  = ======nav left_box -start================= */
+nav .left_box{
+   /* border: 2px solid red; */
+   height: auto;
+   width: 750px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 20px;
+}
+
+nav .left_box .icon_box .fa-bars{
+       font-size: 20px;
+       color: gray;
+       cursor: pointer;
+}
+nav .left_box .logo_box{
+     /* border: 2px solid red; */
+     /* font-size: 25px */
+     /* color: rgb(85, 83, 83); */
+     padding-top: 10px;
+     margin: 0 20px;
+     cursor: pointer;
+}
+nav .left_box .search_box{
+ background-color: white;
+  border: 1px solid rgb(195, 194, 194);
+  padding: 5px 5px 5px 10px;
+  width: 800px;
+  height: 40px;
+  /* border: 10px; */
+  border-radius: 50px;
+  cursor: pointer;
+}
+nav .left_box .search_box .fa-magnifying-glass{
+    color: rgb(158, 158, 158);
+}
+nav .left_box .search_box input{
+     width: 500px;
+     height: 100%;
+     margin-left: 10px;
+     border: none;
+     outline: none;
+     cursor: pointer;
+}
+           /* ==================nav left _box end ================ */
+           /* -------------------nav right start----------------- */
+nav .right_box{
+     /* border:2px solid red; */
+     display: flex;
+     align-items: center;
+}
+nav .right_box button{
+       border: 1px solid red;
+      margin: 0 25px 0 0;
+      color: red;
+      padding: 5px 10px;
+      border-radius: 50px;
+      /* background-color: white; */
+      transition: all .4s;
+      cursor: pointer;
+}
+nav .right_box button:hover{
+    background-color: rgb(233, 99, 99);
+    color: white;
+}
+nav .right_box .fa-language{
+      margin: 0 25px 0 0;
+      font-size: 21px;
+      color: gray;
+      cursor: pointer;
+}
+nav .right_box .fa-moon{
+     margin: 0 25px 0 0 ;
+     font-size: 22px;
+     color: gray;
+     cursor: pointer;
+}
+nav .right_box p{
+   margin: 0 25px 0 0 ;
+   font-size: 12px;
+   color: grey;
+   cursor: pointer;
+   transition: all .1s;
+}
+nav .right_box p:hover{
+   color: rgb(22, 190, 22);
+}
+           /* -----------------nav right end--------------------- */
+
+/* -------------------navbar end============================================ */

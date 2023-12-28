@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>VIDEO-TEST</title>
+</head>
+<style>
+   *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: Arial, Helvetica, sans-serif;
+   }
+   .banner{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   .banner video{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+   }
+   .banner h1{
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: whiteu;
+     font-size: 160px;
+     text-align: center;
+     text-transform: uppercase;
+     color: #000;
+     line-height: 50vh;
+     mix-blend-mode: screen;
+   }
+</style>
+<body>
+    <!-- css text-video -->
+    <div class="banner">
+          <video autoplay muted loop >
+             <source src="./vid.mp4" type="video/mp4"/>
+          </video>
+          <h1>Yatharth</h1>
+    </div>
+</body>
+</html>

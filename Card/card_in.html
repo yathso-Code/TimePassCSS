@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <title>card_in</title>
+</head>
+   <style>
+        *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-color: rgb(25, 25, 25);
+        }
+        .card_box{
+           cursor: pointer;
+            border: 6px solid rgb(54, 179, 9);
+            border-radius: 50px 5px 5px 5px;
+            width: 280px;
+            height: 330px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: all 0.5s;
+        }
+        .card_box .icon_box{
+          width: 30%;
+          height: 70px;
+          border: 6px solid rgb(54, 179, 9);
+          border-radius: 40px 0px 40px 0px;
+          display: flex;
+          justify-content: center;
+          margin-top: -1px;
+          margin-left: -1px;
+          transition: all 0.5s;
+         }
+         .card_box:hover .icon_box {
+          width: 101%;
+          border-radius: 40px 0px 0px 0px;
+         }
+         
+         .card_box .icon_box .fa-user{
+           font-size: 35px;
+           margin-top: 10px;
+         }
+         .card_box .text_box{
+           /* border: 2px solid red; */
+           width: 100%;
+           height: auto;
+           margin-top: 20px;
+           padding: 30px;
+           color: white;
+         }
+         .card_box .text_box h2{
+           text-align: center;
+           font-size: 18px;
+           margin-bottom: 10px;
+         }
+         .card_box .text_box p{
+           font-size: 13px;
+           text-align: center;
+         }
+         .card_box .text_box button{
+            background-color: rgb(26, 255, 0);
+            margin-top: 20px;
+            border: none;
+            padding: 5px 12px;
+            border-radius: 10px;
+            margin-left: 60px;
+            font-size: 12px;
+            color: rgb(10, 10, 10);
+            
+         }
+   </style>
+<body>
+   <div class="card_box">
+        <div class="icon_box">
+         <i class="fa-solid fa-user" style="color: #f9fafa;"></i>
+        </div>
+        <div class="text_box">
+              <h2>SHUKAL</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem exercitationem enim est ut temporibus deserunt voluptatibus
+                rem. Eius cum nulla dolores iure quo magnam maxime expedita, dicta, id illum voluptatum?</p>
+               <button>REAR MORE</button>
+         </div>
+   </div>
+</body>
+</html>

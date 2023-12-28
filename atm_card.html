@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+  <style>
+   *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: Arial, Helvetica, sans-serif;
+   }
+   .main_div{
+      width: 380px;
+      height: 500px;
+      border: 2px solid red;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+   }
+   .main_div .atm_box{
+         width: 360px;
+         height: 200px;
+         /* border: 2px solid blue; */
+         background-color: rgb(64, 64, 156);
+         margin:  5px auto ;
+         border-radius: 5px;
+         padding: 20px;
+   }
+   .main_div .atm_box .icon_name{
+         display: flex;
+         justify-content: space-between;
+       
+         /* border-radius: 5px; */
+   }
+   .main_div .atm_box .icon_name h1{
+       font-weight: bold;
+       font-style: italic;
+       font-size: 35px;
+       color: white;
+   }
+   .main_div .atm_box img{
+       width: 25px;
+       height: 25px;
+   }
+   .main_div .atm_box .number{
+      text-align: center;
+      font-size: 20px;
+      margin: 35px 0;
+      color: white;
+   }
+   .main_div .atm_box .other{
+       display: flex;
+       justify-content: space-between;
+       color: white;
+   }
+   .main_div .atm_box .other
+  </style>
+<body>
+    <div class="main_div">
+        <div class="atm_box">
+               <div class="icon_name">
+                <img src="./arrow.png"/>
+                <h1>VISA</h1>
+               </div>
+               <div class="number">
+                <p>8293 &nbsp&nbsp 8392 &nbsp&nbsp 9182 &nbsp&nbsp 0384</p>
+               </div>
+               <div class="other">
+                   <p class="name">yatharth shukla</p>
+                   <div class="valide">
+                       <p>valid thru</p>
+                       <p><span>12</span>/<span>23</span></p>
+                   </div>
+               </div>
+        </div>
+    </div>
+</body>
+</html>

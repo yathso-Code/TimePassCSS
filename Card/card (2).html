@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<style>
+ *{margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, Helvetica, sans-serif;}
+ body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+ }
+ :root{
+     --color:rgb(10, 131, 72);
+ }
+ .card_box{
+     position: relative;
+     width: 350px;
+     height: 85px;
+     background: var(--color);
+     border-radius: 20px;
+     filter: drop-shadow(-20px 20px 40px black);
+     transition: all 0.5s;
+ }
+  .arraw{
+     position: absolute;
+     bottom: -40px;
+     left: 50%;
+     cursor: pointer;
+     width: 50px;
+     height: 40px;
+     transform: translateX(-50%);
+     background:var(--color);
+     border-radius: 0 0 35px 35px ;
+ }
+ .arraw::before{
+    content: '';
+    position: absolute;
+    left: -20px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-radius: 0 35px 0 0;
+    box-shadow: 11px -10px 0 10px var(--color);
+ }
+ .arraw::after{
+    content: '';
+    position: absolute;
+    right : -20px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-radius: 35px 0 0 0;
+    box-shadow: -11px -10px 0 10px var(--color);
+ }
+ .arraw span{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%) rotate(405deg);
+   width: 10px;
+   height: 10px;
+   border-bottom: 3px solid white;
+   border-right: 3px solid white;
+ }
+ .card_box.active .arraw span{
+  transform: translate(-50%, -50%) rotate(225deg);
+ }
+ /* ============card Effect ======== */
+ .card_box.active{
+     height: 400px;
+ }
+ /* =============contenner_box ==========*/
+ .contaner_box{
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    
+ }
+ .contaner_box .content{
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    z-index: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+ }
+ .contaner_box .content h2{
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    line-height: 1.1em;
+ }
+ .contaner_box .content h2 span{
+   font-size: 0.72em;
+   font-weight: 400;
+   text-transform: initial;
+ }
+ .imgbox{
+   position: relative;
+   width: 250px;
+   height: 250px;
+   background: #fff;
+   margin-left: 50px;
+ }
+ .imgbox img{
+    width: 100%;
+    height: 100%;
+ }
+</style>
+<body>
+    <div class="card_box">
+       <div class="contaner_box">
+           <div class="content">
+                <h2>Nikola Tesla<br><span>Nikola Tesla was a Serbian-American </span></h2>
+           </div>
+           <div class="imgbox">
+            <img src="./yatharth.jpg"/>
+           </div>
+       </div>
+        <div class="arraw">
+          <span></span>
+        </div>
+    </div>
+</body>
+  <script>
+       let card = document.querySelector('.card_box');
+       let arr = document.querySelector('.arraw');
+           arr.onclick = function() {
+           card.classList.toggle('active');
+       };
+  </script>
+</html>
